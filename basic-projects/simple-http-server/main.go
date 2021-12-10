@@ -32,6 +32,11 @@ func GetBook(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
+	/*
+	 The endpoints.  This is technically pattern matching
+	 So when a client requests a URL, it checks if there
+	 is any matching patterns that we have set here
+	*/
 	http.HandleFunc("/hello", Hello)
 	http.HandleFunc("/book", GetBook)
 
